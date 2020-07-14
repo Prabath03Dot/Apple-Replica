@@ -1,0 +1,328 @@
+/* Styling*/
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  font-family: "SF Pro Display", sans-serif;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 98rem;
+  margin: 0 auto;
+  padding: 0 2.2rem;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 1400;
+  width: 100%;
+  height: 4.4rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2rem);
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -1rem;
+}
+
+.nav-list-mobile {
+  display: none;
+}
+
+.nav-link {
+  font-size: 1.4rem;
+  color: white;
+  padding: 0 1rem;
+  transition: opacity 0.5s;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+.nav-link-apple {
+  width: 1.6rem;
+  height: 4.4rem;
+  background: url("images/icons/apple.svg") center no-repeat;
+}
+.nav-link-search {
+  width: 1.6rem;
+  height: 4.4rem;
+  background: url("images/icons/search.svg") center no-repeat;
+}
+.nav-link-bag {
+  width: 1.4rem;
+  height: 4.4rem;
+  background: url("images/icons/bag.svg") center no-repeat;
+}
+
+/* iphone-SE */
+
+.iphone-se{
+  background: url("images/hero/iPhone-SE.jpg");
+  margin-top: 4.4rem;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  padding-top: 5.5rem;
+}
+
+.title-heading {
+  font-size: 5.6rem;
+  line-height: 1.07143;
+  letter-spacing: -0.005rem;
+}
+
+.title-sub-heading {
+  font-size: 2.65rem;
+  margin-top: 0.6rem;
+  letter-spacing: 0.008rem;
+  font-weight: 400;
+}
+
+.title-price {
+  font-size: 1.7rem;
+  color: #888;
+  margin-top: 0.68rem;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 1.8rem;
+}
+
+.cta-link {
+  color: #66bbff;
+  font-size: 2.1rem;
+  display: inline-block;
+}
+.cta img{
+  width:14px;
+  height:14px;
+  position:center;
+  cursor: pointer;
+  padding-top: 15px;
+}
+
+.cta-link:nth-child(2) {
+  margin-left: 2.6rem;
+}
+
+.cta-link:hover {
+  border-bottom: 2px solid #66bbff;
+}
+
+/* iPhone 11 section */
+
+.iphone-11 {
+  background: url("images/hero/iPhone-11-Specs.jpg");
+}
+
+.title-dark {
+  color: black;
+}
+
+.cta-link-darker {
+  color: #0070c9;
+}
+
+.cta-link-darker:hover {
+  border-bottom-color: #0070c9;
+}
+
+.pad {
+  background: url("images/hero/ipad-pro.jpg");
+}
+
+.title-heading-pad{
+  color: black !important;
+  font-size: 5.6rem;
+  line-height: 1.07143;
+  letter-spacing: -0.005rem;
+}
+
+.pad .title-sub-heading {
+  color: black;
+  font-size: 2.2rem;
+}
+
+/* Move to bottom of section styles for consistency */
+.hero {
+  height: 69.2rem;
+  background-size: auto 73.6rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-top: 0.6rem solid white;
+  border-bottom: 0.6rem solid white;
+}
+.iphone-se {
+  border-top: none;
+}
+
+/* Grid Styling */
+.grid-container {
+  display: grid;
+  grid-template-columns: 49.5% 49.5%;
+  grid-template-rows: 700px 700px;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  text-align: center;
+}
+.item1 .cta img{
+  width:25px;
+  height:25px;
+  position:center;
+  cursor: pointer;
+  padding-top: 15px;
+}
+.grid-container .item1{
+  background-image: url("images/hero/Tim_cook.jpg");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+.grid-container .item2{
+  background-image: url("images/hero/Apple-Watch.jpg");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+.grid-container .item3{
+  background-image: url("images/hero/apple-dev.jpg");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+.grid-container .item4{
+  background-image: url("images/hero/watch_medium.jpg");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+.grid-container .item5{
+  background-image: url("images/hero/a-card.jpg");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+.grid-container .item6{
+  background-image: url("images/hero/apple-l.jpg");
+  background-position: center;
+  background-repeat:no-repeat;
+  background-size: contain;
+}
+
+.grid-container .title-heading {
+  font-size: 4.6rem;
+  line-height: 1.07143;
+  letter-spacing: -0.005rem;
+}
+
+.grid-container .title-sub-heading {
+  font-size: 2.00rem;
+  margin-top: 0.6rem;
+  letter-spacing: 0.008rem;
+  font-weight: 400;
+}
+.footer{
+  background-color: #F3EEEE;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+.footer1{
+  padding: 10px;
+  font-size: 1.2rem;
+  line-height: 1.17143;
+  letter-spacing: -0.001rem;
+  color: grey;
+  word-wrap: break-word;
+  border-bottom: 2px solid darkgrey;
+  word-spacing: 0.25rem;
+  padding-top:40px;
+}
+
+.footer2 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  grid-template-rows: 600px;
+  grid-gap: 10px;
+  padding: 5px;
+}
+
+.footer2 > div {
+  text-align: left;
+  padding: 10px 0;
+  font-size: 1.25rem;
+  line-height: 2.47143;
+  letter-spacing: 0.005rem;
+  font-weight: normal;
+    color: grey;
+}
+.footer2 span{
+    color: black;
+    font-weight: normal;
+}
+.footer3{
+    font-size: 1.25rem;
+    color: grey;
+    border-bottom: 2px solid darkgrey;
+    padding-bottom: 10px;
+}
+.footer3 span{
+    font-size: 1.25rem;
+    color: blue;
+}
+.footer4{
+  font-size: 1.25rem;
+  color: grey;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.footer4 .footer5{
+  margin-left: 50px;
+}
+.footer4 .footer5 span{
+  border-right:1px solid grey;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.footer4 .footer5 span:hover{
+  text-decoration: underline;
+}
+.footer4 .footer6{
+  float: right;
+  margin-right: 0;
+  padding: 0;
+  margin-top: -20px;
+}
+.footer4 .footer6:hover{
+  text-decoration: underline;
+}
+.footer7{
+  float: left;
+  margin-right:20px;
+}
+/* End */
